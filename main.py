@@ -5,7 +5,9 @@ cog_list = [
     "cogs.hello", # Точка заменяет нам '/', поэтому '.py' в конце писать не надо.
     "cogs.echo",
     "cogs.admin.kick", # Можно и так ¯\_(ツ)_/¯.
-    "cogs.admin.ban"
+    "cogs.admin.ban",
+    "cogs.context",
+    "cogs.group"
 ]
 
 class MyBot(commands.Bot):
