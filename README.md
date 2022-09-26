@@ -4,7 +4,7 @@
 
 ## Установка discord.py v2.0
 
-- `pip install -U git+https://github.com/Rapptz/discord.py` в терминале.
+- `pip install -U discord.py` в терминале.
 - `import discord` в коде.
 
 ## Какая все-же разница?
