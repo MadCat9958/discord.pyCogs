@@ -12,7 +12,11 @@ cog_list = [
 
 class MyBot(commands.Bot):
     def __init__(self):
-        super().__init__(command_prefix="$", intents=discord.Intents.default())
+        super().__init__(
+            command_prefix="$", 
+            intents=discord.Intents.default() # ВНИМАНИЕ: теперь обязательно надо вводить параметр intents.
+                                              # Если Вы не знаете, что это такое - введите, как у меня.
+        )
     
     async def setup_hook(self): # Подлючение когов.
         for ext in cog_list:
