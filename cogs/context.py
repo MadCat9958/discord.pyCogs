@@ -13,8 +13,8 @@ class Context(commands.Cog):
         )
         self.bot.tree.add_command(self.ctx_command)
 
-        async def ctx(self, interaction: discord.Interaction, member: discord.Member):
-            await interaction.response.send_message(f"Ты выбрал(-а) {member.mention}", ephemeral=True)
+    async def ctx(self, interaction: discord.Interaction, member: discord.Member):
+        await interaction.response.send_message(f"Ты выбрал(-а) {member.mention}", ephemeral=True)
 
 
 async def setup(bot: commands.Bot):
