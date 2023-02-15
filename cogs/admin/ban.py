@@ -9,10 +9,10 @@ class Ban(commands.Cog):
     
     @app_commands.command(name='ban', description="Забанить участника")
     @app_commands.describe(member="Участник, которого надо забанить", reason="Причина")
-    async def kick(self, interaction: discord.Interaction, member: discord.Member, reason: str = None):
+    async def ban(self, interaction: discord.Interaction, member: discord.Member, reason: str = None):
         if interaction.user.guild_permissions.ban_members:
             try:
-                await member.kick(reason=reason)
+                await member.ban(reason=reason)
             except:
                 await interaction.response.send_message("Не удалось забанить участника!", ephemeral=True)
             else:
